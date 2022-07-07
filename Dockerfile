@@ -1,7 +1,7 @@
 FROM ubuntu:jammy
 
-RUN apt update -y
-RUN apt install -y dnsmasq
+RUN apt-get update -y
+RUN apt-get install -y dnsmasq
 
 EXPOSE 53 53/udp
 
