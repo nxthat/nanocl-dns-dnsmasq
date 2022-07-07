@@ -1,7 +1,7 @@
-FROM alpine:latest
+FROM ubuntu:jammy
 
-RUN apk upgrade
-RUN apk add dnsmasq
+RUN apt update -y
+RUN apt install -y dnsmasq
 
 EXPOSE 53 53/udp
 
